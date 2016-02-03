@@ -1,11 +1,16 @@
 
 var integer = prompt('Please input a number.'); // user is prompted to supply a number.
-integer = +integer // +var and -var are a unary operators that convert strings to a number
+// integer = +integer // +var and -var are a unary operators that convert strings to a number
 
-parseInt(); // parseInt() function in JavaScript to convert a string into an integer
+integer = parseInt(integer); // parseInt() function in JavaScript to convert a string into an integer
 
-x % 1 != 0 // To ensure user hasn't supplied a decimel, use modulus like so: when x is divisible by 1 and remainder doesn't equal to 0 means it's a decimel
+    if (integer % 1 != 0) { // this should throw error to user if they use a decimel so use modulus like so: when x is divisible by 1 and remainder doesn't equal to 0 means it's a decimel
+        console.log("Sorry, this doesn't accept decimels.");
+    }
 
+
+//call the function
+//can also wrap everything in a while loop
 
 function integerArgument (integer) {
 
